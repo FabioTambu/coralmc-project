@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2.5vh 2.5vw 2.5vh 2.5vw;
+    min-width: 730px;
+    min-height: 600px;
+}
+
+.custom-rectangle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 18%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bigRectangle {
+    width: 30%;
+    height: 25%;
+    flex: 1;
+    border-radius: 10px;
+    background-color: #1F2A37;
+    min-width: 160px;
+    border: solid 1px #374151;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    & .first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & h4 {
+            margin-left: 5px;
+        }
+    }
+
+    & .second {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+    }
+}

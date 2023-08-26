@@ -8,7 +8,7 @@ interface ISidebarButton {
     src: string;
     alt: string;
     text: string;
-    external?: boolean;
+    active?: boolean;
 }
 
 const SidebarButton = (props: ISidebarButton) => {
@@ -16,11 +16,11 @@ const SidebarButton = (props: ISidebarButton) => {
     const { push } = useRouter();
 
     const handleClick = () => {
-        props.external ? window.location.href = props.url : push(props.url);
+        push(props.url);
     }
 
     return (
-        <div className="sidebarButtonContainer" onClick={handleClick}>
+        <div className={`sidebarButtonContainer ${props.active && "active"}`} onClick={handleClick}>
             <Image src={`/${props.src}.png`} alt={props.alt} width={20} height={20}/>
             <p>{props.text}</p>
         </div>

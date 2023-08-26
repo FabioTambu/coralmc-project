@@ -1,25 +1,24 @@
-@import "src/styles/main";
 .sidebarButtonContainer {
-  margin: 0 15px 15px 15px;
+  margin: 0 15px 10px 15px;
   padding: 2px 8px;
   height: 30px;
   width: 170px;
-  background-color: darkgreen;
   border-radius: 5px;
   user-select: none;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
 
   & p {
-    font-size: $body;
+    font-size: 14px;
     height: 18px;
     padding: 0 8px;
   }
 
 }
 
-.sidebarButtonContainer:hover {
+.sidebarButtonContainer:hover, .sidebarButtonContainer.active {
   cursor: pointer;
+  background-color: #374151;
 }

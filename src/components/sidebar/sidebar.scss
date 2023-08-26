@@ -1,9 +1,13 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .sidebar-container {
     background-color: #1f2a37;
     width: 200px;
     height: 100vh;
     text-align: center;
-    border-right: solid 2px #26303F;
+    border-right: solid 1px #374151;
 }
 
 .sidebar-header {

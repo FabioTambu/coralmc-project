@@ -1,0 +1,27 @@
+.table-status-container {
+  width: 100px;
+  height: 22px;
+  background-color: #374151;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    font-size: 11px;
+    margin-left: 3px;
+  }
+}
+
+.table-status-container.pending {
+  color: #F1C417;
+  border: solid 1px rgba(241, 196, 23, 0.65);
+}
+.table-status-container.completed {
+  color: #31C18B;
+  border: solid 1px rgba(49, 193, 139, 0.65);
+}
+.table-status-container.in-progress {
+  color: #A08CEA;
+  border: solid 1px rgba(160, 140, 234, 0.65);
+}

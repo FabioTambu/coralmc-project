@@ -11,6 +11,7 @@ interface ISidebarButton {
     alt: string;
     text: string;
     external?: boolean;
+    key: string;
 }
 
 interface ISidebarAccordion {
@@ -40,9 +41,9 @@ const SidebarAccordion = (props: ISidebarAccordion) => {
             <div className={`sidebarAccordionContent ${open ? "" : "collapsed"}`}>
                 {
                     props.buttons.map((el: ISidebarButton) => {
-                        return <>
-                            <SidebarButton url={el.url} src={el.src} alt={el.alt} text={el.text} />
-                        </>
+                        return (
+                            <SidebarButton url={el.url} src={el.src} alt={el.alt} text={el.text} key={el.key}/>
+                        )
                     })
                 }
             </div>
