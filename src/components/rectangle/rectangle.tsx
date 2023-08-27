@@ -4,25 +4,25 @@ import Image from "next/image";
 interface IRectangle {
     img: string;
     altImg: string;
-    h4: string;
-    h1: string;
-    p: boolean;
-    pText?: string;
+    titleValue: string;
+    contentValue: string;
+    subtitle: boolean;
+    subtitleValue?: string;
 }
 
 const CustomRectangle = (props: IRectangle) => {
     return (
         <div className="rectangle-container">
             <div className="rectangle-content">
-                <div className="first">
-                    <Image src={`/${props.img}.png`} alt={props.altImg} width={30} height={30}/>
-                    <h4>{props.h4}</h4>
+                <div className="title">
+                    <Image src={`/icons/${props.img}.png`} alt={props.altImg} width={30} height={30}/>
+                    <h4>{props.titleValue}</h4>
                 </div>
-                <div className="second">
-                    <h2>{props.h1}</h2>
+                <div className="content-value">
+                    <h2>{props.contentValue}</h2>
                 </div>
-                <div className="third">
-                    {props.p ? <p>{props.pText}</p> : null}
+                <div>
+                    {props.subtitle ? <p>{props.subtitleValue}</p> : null}
                 </div>
             </div>
         </div>

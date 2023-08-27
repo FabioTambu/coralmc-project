@@ -1,5 +1,4 @@
 import {useRouter} from "next/navigation";
-
 import Image from "next/image";
 import './sidebar-button.scss';
 
@@ -21,7 +20,7 @@ const SidebarButton = (props: ISidebarButton) => {
 
     return (
         <div className={`sidebarButtonContainer ${props.active && "active"}`} onClick={handleClick}>
-            <Image src={`/${props.src}.png`} alt={props.alt} width={20} height={20}/>
+            <Image src={`/icons/${props.src}.png`} alt={props.alt} width={20} height={20}/>
             <p>{props.text}</p>
         </div>
     )

@@ -69,7 +69,7 @@ const CustomTable = () => {
                         <tr key={index} className="row">
                             <td><div className="table-row-div">{word.id}</div></td>
                             <td><div className="table-row-div">{word.username}</div></td>
-                            <td><div className="table-row-div">{word.date}</div></td>
+                            <td><div className="table-row-div date-value">{word.date}</div></td>
                             <td><div className="table-row-div">{word.amount}€</div></td>
                             <td><div className="last-table-row-div table-row-div"><TableStatus value={word.status}/></div></td>
                         </tr>

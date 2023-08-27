@@ -19,20 +19,20 @@ export default function Home() {
                   <Breadcrumb />
 
                   <div className="custom-rectangle">
-                      <CustomRectangle h4={"Staff Users"} h1={"14"} p={false} altImg={"People"} img={"people"}/>
-                      <CustomRectangle h4={"Total in Sales"} h1={"200.000 EUR"} p={true} pText={"All Time"} altImg={"Money"} img={"money"}/>
-                      <CustomRectangle h4={"Total in Sales"} h1={"200.000 EUR"} p={true} pText={"Current Month"} altImg={"Calendar"} img={"calendar"}/>
-                      <CustomRectangle h4={"Average Payment"} h1={"13 EUR"} p={true} pText={"Current Month"} altImg={"Arrow"} img={"arrow-back"}/>
+                      <CustomRectangle titleValue={"Staff Users"} contentValue={"14"} subtitle={false} altImg={"People"} img={"people"}/>
+                      <CustomRectangle titleValue={"Total in Sales"} contentValue={"200.000 EUR"} subtitle={true} subtitleValue={"All Time"} altImg={"Money"} img={"money"}/>
+                      <CustomRectangle titleValue={"Total in Sales"} contentValue={"200.000 EUR"} subtitle={true} subtitleValue={"Current Month"} altImg={"Calendar"} img={"calendar"}/>
+                      <CustomRectangle titleValue={"Average Payment"} contentValue={"13 EUR"} subtitle={true} subtitleValue={"Current Month"} altImg={"Arrow"} img={"arrow-back"}/>
                   </div>
 
                   <CustomTable/>
 
-                  <div className="bigRectangle">
-                      <div className="first">
-                          <Image src={"/people.png"} alt={"People"} width={30} height={30}/>
+                  <div className="more-info">
+                      <div className="title-rectangle">
+                          <Image src={"/icons/people.png"} alt={"People"} width={30} height={30}/>
                           <h4>Staff Users</h4>
                       </div>
-                      <div className="second">
+                      <div className="content-rectangle">
                           <h2>14</h2>
                       </div>
                   </div>

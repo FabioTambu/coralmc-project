@@ -1,4 +1,3 @@
-"use client"
 import {usePathname, useRouter} from "next/navigation";
 import './breadcrumb.scss';
 import Image from "next/image";
@@ -26,7 +25,7 @@ const Breadcrumb = () => {
         return (
             <div key={props.title} className={"breadcrumb-element"}
                  onClick={() => handleClickBreadcrumbEl(props.title)}>
-                <Image src={"/arrow-right.png"} alt={"arrow"} width={22} height={22}/>
+                <Image src={"/icons/arrow-right.png"} alt={"arrow"} width={22} height={22}/>
                 <p>
                     {
                         props.title.split("-").map((el: string) => {
@@ -58,7 +57,7 @@ const Breadcrumb = () => {
                 <div className={"main-item"} onClick={() => {
                     push(`/${pathname.split("/")[1]}`)
                 }}>
-                    <Image src={`/${image}.png`} alt={image} width={20} height={20}/>
+                    <Image src={`/icons/${image}.png`} alt={image} width={20} height={20}/>
                     <p>
                         {
                             baseElement.split(" ").map((el: string) => {

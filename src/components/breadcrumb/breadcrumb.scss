@@ -1,5 +1,5 @@
 .breadcrumb-container {
-  height: 40px;
+  height: 45px;
   width: fit-content;
   border-radius: 8px;
   background-color: #1F2A37;
@@ -7,8 +7,8 @@
   display: flex;
   align-items: center;
   padding-right: 5px;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 10px 0;
+  user-select: none;
 
   & .main-item {
     display: flex;

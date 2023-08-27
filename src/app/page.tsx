@@ -9,12 +9,23 @@ export default function Home() {
 
     const [loading, setLoading] = useState<boolean>(true);
 
-    const { push } = useRouter();
+    const { push, replace } = useRouter();
     const pathname = usePathname();
+
+    const routes:string[] = [
+        "/control-panel",
+        "/control-panel/dashboard",
+        "/variables",
+    ];
 
     useEffect(() => {
         if(pathname != "/") {
-            push(pathname);
+            if (routes.includes(pathname)) {
+                push(pathname);
+            } else {
+                replace("/");
+                setLoading(false);
+            }
         } else {
             setLoading(false);
         }
@@ -31,6 +42,7 @@ export default function Home() {
                   <div className="content">
                       <Breadcrumb />
                       <h1> HOMEPAGE </h1>
+                      <h5>Usa la sidebar per navigare tra le pagine</h5>
                   </div>
               }
           </div>

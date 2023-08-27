@@ -10,9 +10,8 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin: 2.5vh 2.5vw 2.5vh 2.5vw;
+    margin: 2.5vh 2.5vw;
     min-width: 730px;
-    min-height: 600px;
 }
 
 .custom-rectangle {
@@ -20,13 +19,12 @@
     width: 100%;
     justify-content: space-between;
     height: 18%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.bigRectangle {
+.more-info {
     width: 30%;
-    height: 25%;
     flex: 1;
     border-radius: 10px;
     background-color: #1F2A37;
@@ -37,10 +35,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
-    & .first {
+    & .title-rectangle {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -50,7 +48,7 @@
         }
     }
 
-    & .second {
+    & .content-rectangle {
         display: flex;
         align-items: center;
         justify-content: center;

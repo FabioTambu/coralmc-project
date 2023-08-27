@@ -1,5 +1,3 @@
-import {useRouter} from "next/navigation";
-
 import Image from "next/image";
 import './sidebar-accordion.scss';
 import {useState} from "react";
@@ -30,12 +28,12 @@ const SidebarAccordion = (props: ISidebarAccordion) => {
             <div className="sidebarAccordionContainer" onClick={() => setOpen(!open)}>
                 <div>
                     <div>
-                        <Image src={`/${props.src}.png`} alt={props.alt} width={20} height={20}/>
+                        <Image src={`/icons/${props.src}.png`} alt={props.alt} width={20} height={20}/>
                     </div>
                     <p>{props.text}</p>
                 </div>
                 <div>
-                    <Image src={'/arrow-down.png'} alt={"arrow down"} width={20} height={20}/>
+                    <Image src={'/icons/arrow-down.png'} alt={"arrow down"} width={20} height={20}/>
                 </div>
             </div>
             <div className={`sidebarAccordionContent ${open ? "" : "collapsed"}`}>

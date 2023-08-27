@@ -114,13 +114,13 @@ const CustomSidebar = () => {
 
             <div className="bottomBar">
                 <a href={"https://www.google.com"} target={"_blank"}>
-                    <Image src={"/lines-setting.png"} alt={"Lines Setting"} width={22} height={22}/>
+                    <Image src={"/icons/lines-setting.png"} alt={"Lines Setting"} width={22} height={22}/>
                 </a>
                 <a href={"https://www.google.com"} target={"_blank"}>
-                    <Image src={"/world.png"} alt={"World"} width={22} height={22}/>
+                    <Image src={"/icons/world.png"} alt={"World"} width={22} height={22}/>
                 </a>
                 <a href={"https://www.google.com"} target={"_blank"}>
-                    <Image src={"/setting.png"} alt={"Setting"} width={22} height={22}/>
+                    <Image src={"/icons/setting.png"} alt={"Setting"} width={22} height={22}/>
                 </a>
             </div>
         </div>
