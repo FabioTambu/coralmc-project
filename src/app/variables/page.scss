@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2.5vh 2.5vw;
+    min-width: 730px;
+    min-height: 600px;
+}

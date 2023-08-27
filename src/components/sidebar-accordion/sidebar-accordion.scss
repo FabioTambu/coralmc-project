@@ -1,0 +1,39 @@
+.sidebarAccordionContainer {
+  margin: 0 15px 10px 15px;
+  padding: 2px 8px;
+  height: 30px;
+  width: 170px;
+  border-radius: 5px;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  & p {
+    font-size: 14px;
+    height: 18px;
+    padding: 0 8px;
+  }
+
+  & div {
+    display: flex;
+  }
+
+}
+
+.sidebarAccordionContainer:hover {
+  cursor: pointer;
+  background-color: #374151;
+}
+
+.sidebarAccordionContent {
+  margin-left: 10px;
+  overflow: hidden;
+  transition: max-height .3s ease-in;
+  max-height: 100px;
+}
+
+.sidebarAccordionContent.collapsed {
+  max-height: 0;
+}
